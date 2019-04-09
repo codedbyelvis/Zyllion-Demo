@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import Dashboard from "./components/Dashboard/Dashboard";
-import AccountSync1 from "./components/Onboarding/AccountSync/1. Connection/Connection";
-import AccountSync2 from "./components/Onboarding/AccountSync/2.  Entities/Entities";
-import AccountSync3 from "./components/Onboarding/AccountSync/3. Package/Package";
-import BankInfo from "./components/Onboarding/BankInfo/BankInfo";
-import ContactInfo from "./components/Onboarding/ContactInfo/ContactInfo";
-import Welcome from "./components/Onboarding/Welcome/Welcome";
-import W9 from "./components/Onboarding/W9/W9";
-// import Signin from "./components/Signin/Signin";
-// import Signup from "./components/Signup/Signup";
-// import zyllion_logo from "./components/AccountSync/Logo.png";
-import './App.css';
+import AccountSync from "./components/AccountSync/AccountSync";
+import BankInfo from "./components/BankInfo/BankInfo";
+import ContactInfo from "./components/ContactInfo/ContactInfo";
+import W9 from "./components/W9/W9";
+import Signin from "./components/Signin/Signin";
+import Signup from "./components/Signup/Signup";
+import zyllion_logo from "./components/AccountSync/Logo.png";
+import './Navbar.css';
 
-export default class App extends Component {
+export default class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,11 +33,9 @@ export default class App extends Component {
             </Link> */}
             <div className="nav_links" >
               <ul>
-              <li className="Welcome"><Link to="/">Welcome</Link></li>
-              <li className="dashboard"><Link to="/dashboard">Dashboard</Link></li>
-              <li className="accountsync"><Link to="/accountsync1">Account Sync</Link></li>
-              <li className="bankinfo"><Link to="/bankinfo">Bank Account Integration</Link></li>
-              <li className="contactinfo"><Link to='/contactinfo'>Contact Information</Link></li>
+              <li className="accountsync"><Link to="/">Account Sync</Link></li>
+              <li className="bankinfo"><Link to="/bankinfo">Bank Account Information</Link></li>
+              {/* <li className="contactinfo"><Link to='/contactinfo'>Contact Information</Link></li> */}
               <li className="w9"><Link to='/w9'>W-9 Form</Link></li>
               {/* <li className="buttons">
               <Link to="/signup"><button className='Signup'>Signup</button></Link>
@@ -51,7 +45,7 @@ export default class App extends Component {
             </div>
             </div>
 
-            {/* <div className="footer" >
+            <div className="footer" >
               <h4>2018 Zyllion, LLC | All Rights Reserved</h4>
               <ul>
                 <li><a href="">Privacy Policy</a></li>
@@ -60,17 +54,14 @@ export default class App extends Component {
               </ul>
               
               
-            </div> */}
+            </div>
 
             
 
             
             <Switch>
-              <Route component={Welcome} exact path="/" />
-              <Route component={Dashboard} path="/dashboard" />
-              <Route component={AccountSync1} path="/accountsync1" />
-              <Route component={AccountSync2} path="/accountsync2" />
-              <Route component={AccountSync3} path="/accountsync3" />
+              <Route component={AccountSync} exact path="/" />
+              {/* <Route component={AccountSync} path="/accountinfo" /> */}
               <Route component={BankInfo} path="/bankinfo" />
               <Route component={ContactInfo} path="/contactinfo" />
               {/* <Route component={Signup} path="/signup" />
