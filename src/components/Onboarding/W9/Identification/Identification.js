@@ -21,6 +21,11 @@ export default class Identification extends Component {
         return (
 
                 <div className='Identification'>
+                <navbar>
+                <Link to="/accountsync1" className='nav1'>Account Sync</Link>
+                <Link to="/bankinfo" className='nav2'>Bank Account Integration</Link>
+                <Link to="/w9part1" className='nav3'>W-9 Form</Link>
+                </navbar>
                 <p>Setup Progress</p>
               <p>Step {this.state.step} of 3</p>
               <p>Progress: {this.state.progress}% done</p>

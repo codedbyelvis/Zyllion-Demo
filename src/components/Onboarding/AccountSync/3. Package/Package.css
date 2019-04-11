@@ -1,0 +1,9 @@
+.Package img {
+  margin-left: 5px;
+  height: 140px;
+  width: 140px;
+  align-content: center;
+    border: black 5px solid;
+    border-radius: 60%;
+}
+

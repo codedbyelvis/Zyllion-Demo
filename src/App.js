@@ -124,10 +124,10 @@ export default class App extends Component {
               <ul>
               {/* <li className="Welcome"><Link to="/">Welcome</Link></li> */}
               {/* <li className="dashboard"><Link to="/dashboard">Dashboard</Link></li> */}
-              <li className="accountsync"><Link to="/accountsync1">Account Sync</Link></li>
-              <li className="bankinfo"><Link to="/bankinfo">Bank Account Integration</Link></li>
+              {/* <li className="accountsync"><Link to="/accountsync1">Account Sync</Link></li> */}
+              {/* <li className="bankinfo"><Link to="/bankinfo">Bank Account Integration</Link></li> */}
               {/* <li className="contactinfo"><Link to='/contactinfo'>Contact Information</Link></li> */}
-              <li className="w9"><Link to='/w9part1'>W-9 Form</Link></li>
+              {/* <li className="w9"><Link to='/w9part1'>W-9 Form</Link></li> */}
               {/* <li className="buttons">
               <Link to="/signup"><button className='Signup'>Signup</button></Link>
               <Link to="/signin"><button className='Login'>Login</button></Link>
