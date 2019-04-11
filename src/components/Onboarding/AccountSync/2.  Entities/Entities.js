@@ -22,20 +22,26 @@ export default class Entities extends Component {
   render() {
     return (
       <div className="Entities">
-      <navbar>
-        <Link to="/accountsync1" className='nav1'>Account Sync</Link>
-        <Link to="/bankinfo" className='nav2'>Bank Account Integration</Link>
-        <Link to="/w9part1" className='nav3'>W-9 Form</Link>
-      </navbar>
-      <p>Setup Progress</p>
+  <div className="menubar">
+        <div className="Setup">
+        <p>Setup Progress</p>
               <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}% done</p>
+              <p>Progress: {this.state.progress}%</p>
+        </div>
+        <div className="navbar">
+        <Link to="/accountsync1" className='nav1'><p>Account Sync</p></Link>
+        <Link to="/bankinfo" className='nav2'><p>Bank Account Integration</p></Link>
+        <Link to="/w9part1" className='nav3'><p>W-9 Form</p></Link>
+        </div>
+  </div>
       {/* {console.log('DDDD', this.props)} */}
-        <h1>Account Sync</h1>
+  <div className="component">
+        <h1 className="EntitiesTItle">Account Sync</h1>
         {/* <h3>Account System: </h3> */}
-        <FormContainer />
-        <Link to="/accountsync3"><button className='13'>Continue</button></Link>
+        <div className="Formz"><FormContainer /></div>
+        <div className="buttonL"><Link to="/accountsync3"><button className='13'>Continue</button></Link></div>
       </div>
+  </div>
     );
   }
 }
