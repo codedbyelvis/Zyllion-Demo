@@ -1,28 +1,16 @@
-// import React, { Component } from "react";
-// import { render } from "react-dom";
-// import FormContainer from "./W9-FC";
-// import axios from 'axios';
-// import './Contact.css';
-// export default class Contact extends Component {
-
-//     render() {
-//     return (
-//       <div className="Contact">
-//       <h1 className='ContactTitle'>Contact</h1>
-//       <h3 className='Contactinfo'>Questions about blockchain or when we plan to launch? No problem. 
-//           Drop us a line and we will get back to you.</h3>
-//         <FormContainer />
-//       </div>
-//     );
-//   }
-// }
-
-// render(<Contact />, document.getElementById("root"));
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import './W9.css';
 
 
 export default class W9 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          step : '3',
+          progress : 66,
+        };
+      }
 
     componentDidMount() {
         window.scrollTo(0, 0);
@@ -32,7 +20,11 @@ export default class W9 extends Component {
         return (
 
                 <div className='W9'>
+                <p>Setup Progress</p>
+              <p>Step {this.state.step} of 3</p>
+              <p>Progress: {this.state.progress}% done</p>
                 <h1 className='W9Title'>W9 says Hello</h1>
+                <Link to="/thankyou"><button className='TY'>Finish</button></Link>
                 
                 
                 </div> 

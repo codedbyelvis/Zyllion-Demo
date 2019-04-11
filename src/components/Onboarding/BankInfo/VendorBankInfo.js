@@ -9,7 +9,7 @@ const styles = {
   textAlign: "center"
 };
 
-export default class BankInfo extends Component {
+export default class VendorBankInfo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,16 +24,16 @@ export default class BankInfo extends Component {
 
   render() {
     return (
-      <div className="BankInfo">
+      <div className="VendorBankInfo">
       <p>Setup Progress</p>
               <p>Step {this.state.step} of 3</p>
               <p>Progress: {this.state.progress}% done</p>
         <h1>Bank Account Integration</h1>
         <FormContainer />
-        <Link to="/w9part1"><button className='dog'>Continue</button></Link>
+        <Link to="/vendorw9part1"><button className='Vdog'>Continue</button></Link>
       </div>
     );
   }
 }
 
-// render(<BankInfo />, document.getElementById("root"));
+// render(<VendorBankInfo />, document.getElementById("root"));

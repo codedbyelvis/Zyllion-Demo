@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from 'axios';
 
 import Input from "../../Forms/Input";
-import TextArea from "../../Forms/TextArea";
 import Button from "../../Forms/Button";
 
 class BankInfoFC extends Component {
@@ -111,65 +110,65 @@ class BankInfoFC extends Component {
         <Input
           inputType={"text"}
           title={"Bank Alias"}
-          name={"bankalias"}
+          name={"bank_alias"}
           value={this.state.BankInfo.bank_alias}
-          placeholder={"Enter your Bank Alias"}
+          placeholder={"Enter Bank Alias"}
           handleChange={this.handleInput}
         />{" "}
         {/* Bank Alias */}
         <Input
           inputType={"text"}
           title={"Account Number"}
-          name={"accountnumber"}
+          name={"account_number"}
           value={this.state.BankInfo.account_number}
-          placeholder={"Enter your Account Number"}
+          placeholder={"Enter Account Number"}
           handleChange={this.handleInput}
         />{" "}
         {/* Account Number */}
         <Input
           inputType={"text"}
           title={"Routing Number"}
-          name={"routingnumber"}
+          name={"routing_number"}
           value={this.state.BankInfo.routing_number}
-          placeholder={"Enter your Routing Number"}
+          placeholder={"Enter Routing Number"}
           handleChange={this.handleInput}
         />{" "}
         {/* Routing Number */}
-        <Button
+        {/* <Button
           action={this.handleFormSubmit}
         //   action={this.handleClearForm}
           type={"primary"}
           title={"Add bank"}
           style={buttonStyle}
           onSubmit={this.handleSubmit}
-        />{" "}
+        />{" "} */}
         {/*Add Bank */}
-        <Button
+        {/* <Button
           action={this.handleFormSubmit}
         //   action={this.handleClearForm}
           type={"primary"}
           title={"Remove bank"}
           style={buttonStyle}
           onSubmit={this.handleSubmit}
-        />{" "}
+        />{" "} */}
         {/*Remove Bank */}
-        <Button
+        {/* <Button
           action={this.handleFormSubmit}
         //   action={this.handleClearForm}
           type={"primary"}
           title={"Submit"}
           style={buttonStyle}
           onSubmit={this.handleSubmit}
-        />{" "}
+        />{" "} */}
         {/*Submit */}
-        <Button
+        {/* <Button
           action={this.handleFormSubmit}
         //   action={this.handleClearForm}
           type={"primary"}
           title={"Continue"}
           style={buttonStyle}
           onSubmit={this.handleSubmit}
-        />{" "}
+        />{" "} */}
         {/*Continue */}
       </form>
     );

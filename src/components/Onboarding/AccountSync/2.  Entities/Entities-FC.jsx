@@ -11,9 +11,9 @@ class EntitiesFC extends Component {
     super(props);
 
     this.state = {
-      EntitesState: {
+      EntitiesState: {
         system: [],
-        companies: []
+        company: [],
       },
 
       AccountSystems: ["Quickbooks"],
@@ -21,9 +21,9 @@ class EntitiesFC extends Component {
 
     };
     this.handleSystem = this.handleSystem.bind(this);
-    this.handleCompanyList = this.handleCompanyList.bind(this);
+    this.handleCompanies = this.handleCompanies.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
-    // this.handleInput = this.handleInput.bind(this);
+    this.handleInput = this.handleInput.bind(this);
 
   }
 
@@ -37,55 +37,55 @@ class EntitiesFC extends Component {
       const newSelection = e.target.value;
       let newSelectionArray;
   
-      if (this.state.EntitesState.system.indexOf(newSelection) > -1) {
-        newSelectionArray = this.state.EntitesState.system.filter(
+      if (this.state.EntitiesState.system.indexOf(newSelection) > -1) {
+        newSelectionArray = this.state.EntitiesState.system.filter(
           s => s !== newSelection
         );
       } else {
-        newSelectionArray = [...this.state.EntitesState.system, newSelection];
+        newSelectionArray = [...this.state.EntitiesState.system, newSelection];
       }
   
       this.setState(prevState => ({
-        EntitesState: { ...prevState.EntitesState, system: newSelectionArray }
+        EntitiesState: { ...prevState.EntitiesState, system: newSelectionArray }
+      }));
+    }
+        
+    handleCompanies(e) {
+      const newSelection = e.target.value;
+      let newSelectionArray;
+  
+      if (this.state.EntitiesState.company.indexOf(newSelection) > -1) {
+        newSelectionArray = this.state.EntitiesState.company.filter(
+          s => s !== newSelection
+        );
+      } else {
+        newSelectionArray = [...this.state.EntitiesState.company, newSelection];
+      }
+  
+      this.setState(prevState => ({
+        EntitiesState: { ...prevState.EntitiesState, company: newSelectionArray }
       }));
     }
 
-    handleCompanyList(e) {
-        const newSelection = e.target.value;
-        let newSelectionArray;
-    
-        if (this.state.EntitesState.companies.indexOf(newSelection) > -1) {
-          newSelectionArray = this.state.EntitesState.companies.filter(
-            s => s !== newSelection
-          );
-        } else {
-          newSelectionArray = [...this.state.EntitesState.companies, newSelection];
+  handleInput(e) {
+    let value = e.target.value;
+    let name = e.target.name;
+    this.setState(
+      prevState => ({
+        EntitiesState: {
+          ...prevState.EntitiesState,
+          [name]: value
         }
-    
-        this.setState(prevState => ({
-          EntitesState: { ...prevState.EntitesState, companies: newSelectionArray }
-        }));
-      }
-
-//   handleInput(e) {
-//     let value = e.target.value;
-//     let name = e.target.name;
-//     this.setState(
-//       prevState => ({
-//         EntitesState: {
-//           ...prevState.EntitesState,
-//           [name]: value
-//         }
-//       }),
-//       () => console.log(this.state.EntitesState)
-//     );
-//   }
+      }),
+      () => console.log(this.state.EntitiesState)
+    );
+  }
 
   handleFormSubmit(e) {
     e.preventDefault();
-    let userData = this.state.EntitesState;
+    let userData = this.state.EntitiesState;
 
-    const { system, companies } =this.state.EntitesState;
+    const { system, company_id, user_id, password } =this.state.EntitiesState;
 
 
     // axios.post('/api/form', {
@@ -110,41 +110,31 @@ class EntitiesFC extends Component {
       <form className="container-fluid" onSubmit={this.handleFormSubmit}>
         <Select
           title={"Systems"}
-          name={"systems"}
+          name={"system"}
           options={this.state.AccountSystems}
-          value={this.state.EntitesState.system}
+          value={this.state.EntitiesState.system}
           placeholder={"Account System"}
           handleChange={this.handleInput}
         />{" "}
         {/* Account System Selection */}
         <Select
           title={"Companies"}
-          name={"companies"}
+          name={"company"}
           options={this.state.CompaniesList}
-          value={this.state.EntitesState.companies}
-          placeholder={"Select Entitiy"}
+          value={this.state.EntitiesState.company}
+          placeholder={"Select Entity"}
           handleChange={this.handleInput}
         />{" "}
-        {/* Entities Selection */}
-        <Button
+        {/* Account System Selection */}        
+        {/* <Button
           action={this.handleFormSubmit}
         //   action={this.handleClearForm}
           type={"primary"}
-          title={"Connect"}
+          title={"Submit"}
           style={buttonStyle}
           onSubmit={this.handleSubmit}
         // {<Link to="/accountsync2" />}
-        />{" "}
-        {/*Submit */}
-        <Button
-          action={this.handleFormSubmit}
-        //   action={this.handleClearForm}
-          type={"primary"}
-          title={"Disconnect"}
-          style={buttonStyle}
-          onSubmit={this.handleSubmit}
-        // {<Link to="/accountsync2" />}
-        />{" "}
+        />{" "} */}
         {/*Submit */}
       </form>
     );

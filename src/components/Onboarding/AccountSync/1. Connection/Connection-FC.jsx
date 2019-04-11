@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import axios from 'axios';
 
 import Input from "../../../Forms/Input";
@@ -33,7 +33,8 @@ class AccountSyncFC extends Component {
   /* This lifecycle hook gets executed when the component mounts */
 
   componentDidMount() {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
+    console.log('App',this.props); 
     }
         
     handleSystem(e) {
@@ -127,15 +128,17 @@ class AccountSyncFC extends Component {
     //     console.log(error);
     //     console.log("is a no, Quickbooks is");
     // });
+    // this.props.history.push("/accountsync2");
 }
 
 
   render() {
     return (
       <form className="container-fluid" onSubmit={this.handleFormSubmit}>
-        <Select
+        <Select 
+          select multiple={false}
           title={"Systems"}
-          name={"systems"}
+          name={"system"}
           options={this.state.AccountSystems}
           value={this.state.accountSyncState.system}
           placeholder={"Account System"}
@@ -145,7 +148,7 @@ class AccountSyncFC extends Component {
         <Input
           inputType={"text"}
           title={"Company ID"}
-          name={"companyid"}
+          name={"company_id"}
           value={this.state.accountSyncState.CompanyId}
           placeholder={"Company ID"}
           handleChange={this.handleInput}
@@ -154,14 +157,14 @@ class AccountSyncFC extends Component {
         <Input
           inputType={"text"}
           title={"User ID"}
-          name={"userid"}
+          name={"user_id"}
           value={this.state.accountSyncState.user_id}
           placeholder={"User ID"}
           handleChange={this.handleInput}
         />{" "}
         {/* User Id */}
         <Input
-          inputType={"text"}
+          inputType={"password"}
           title={"Password"}
           name={"password"}
           value={this.state.accountSyncState.password}
@@ -169,7 +172,7 @@ class AccountSyncFC extends Component {
           handleChange={this.handleInput}
         />{" "}
         {/* Password */}
-        <Button
+        {/* <Button
           action={this.handleFormSubmit}
         //   action={this.handleClearForm}
           type={"primary"}
@@ -177,7 +180,7 @@ class AccountSyncFC extends Component {
           style={buttonStyle}
           onSubmit={this.handleSubmit}
         // {<Link to="/accountsync2" />}
-        />{" "}
+        />{" "} */}
         {/*Submit */}
       </form>
     );

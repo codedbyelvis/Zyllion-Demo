@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { render } from "react-dom";
 import FormContainer from "./Connection-FC";
 import './Connection.css';
@@ -9,82 +10,37 @@ const styles = {
 };
 
 export default class Connection extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      step : '1',
+      progress : 0,
+    };
+  };
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+    console.log('New Url',this.props);
+    console.log('Pez',this.props.location);
+    // console.log('pweq',this.props.location.pathname);
+    // console.log('qwer',this.props.location.hash);
+    //     this.props.location.hash = "qaz";
+}
+
   render() {
     return (
+      
       <div className="Connection">
+        <p>Setup Progress</p>
+              <p>Step {this.state.step} of 3</p>
+              <p>Progress: {this.state.progress}% done</p>
         <h1>Account Sync</h1>
         <p>I can see all of your secrets</p>
         <FormContainer />
+        <Link to="/accountsync2"><button className='12'>Continue</button></Link>
       </div>
     );
   }
 }
 
-render(<Connection />, document.getElementById("root"));
-
-
-// export default class AccountSync extends Component {
-//     constructor() {
-//       super();
-      
-//       this.state = {
-//         showMenu: false,
-//       };
-      
-//       this.showMenu = this.showMenu.bind(this);
-//       this.closeMenu = this.closeMenu.bind(this);
-//     }
-
-//     componentDidMount() {
-//         window.scrollTo(0, 0);
-//     }
-    
-//     showMenu(event) {
-//       event.preventDefault();
-      
-//       this.setState({ showMenu: true }, () => {
-//         document.addEventListener('click', this.closeMenu);
-//       });
-//     }
-    
-//     closeMenu(event) {
-      
-//       if (!this.AccountSyncDrop.contains(event.target)) {
-        
-//         this.setState({ showMenu: false }, () => {
-//           document.removeEventListener('click', this.closeMenu);
-//         });  
-        
-//       }
-//     }
-  
-//     render() {
-//       return (
-//         <div className='AccountSync'>
-//             <h1 className='AccountSyncTitle'>Account Sync</h1>
-//             <p>I can see all your secrets</p>
-//           <button onClick={this.showMenu}>
-//             Show menu
-//           </button>
-          
-//           {
-//             this.state.showMenu
-//               ? (
-//                 <div
-//                   className="menu"
-//                   ref={(element) => {
-//                     this.AccountSyncDrop = element;
-//                   }}
-//                 >
-//                   <button> Quickbooks </button>
-//                   <button> Intacct </button>
-//                 </div>
-//               )
-//               : (
-//                 null
-//               )
-//           }
-//         </div>
-//       );
-//     }
-//   }
+// render(<Connection />, document.getElementById("root"));

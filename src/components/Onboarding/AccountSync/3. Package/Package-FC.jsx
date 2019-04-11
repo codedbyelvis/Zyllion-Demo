@@ -11,7 +11,7 @@ class PackageFC extends Component {
     super(props);
 
     this.state = {
-      accountSyncState: {
+      PackageState: {
         system: [],
       },
 
@@ -34,16 +34,16 @@ class PackageFC extends Component {
       const newSelection = e.target.value;
       let newSelectionArray;
   
-      if (this.state.accountSyncState.system.indexOf(newSelection) > -1) {
-        newSelectionArray = this.state.accountSyncState.system.filter(
+      if (this.state.PackageState.system.indexOf(newSelection) > -1) {
+        newSelectionArray = this.state.PackageState.system.filter(
           s => s !== newSelection
         );
       } else {
-        newSelectionArray = [...this.state.accountSyncState.system, newSelection];
+        newSelectionArray = [...this.state.PackageState.system, newSelection];
       }
   
       this.setState(prevState => ({
-        accountSyncState: { ...prevState.accountSyncState, system: newSelectionArray }
+        PackageState: { ...prevState.PackageState, system: newSelectionArray }
       }));
     }
 
@@ -52,20 +52,20 @@ class PackageFC extends Component {
     let name = e.target.name;
     this.setState(
       prevState => ({
-        accountSyncState: {
-          ...prevState.accountSyncState,
+        PackageState: {
+          ...prevState.PackageState,
           [name]: value
         }
       }),
-      () => console.log(this.state.accountSyncState)
+      () => console.log(this.state.PackageState)
     );
   }
 
   handleFormSubmit(e) {
     e.preventDefault();
-    let userData = this.state.accountSyncState;
+    let userData = this.state.PackageState;
 
-    const { system, company_id, user_id, password } =this.state.accountSyncState;
+    const { system, company_id, user_id, password } =this.state.PackageState;
 
 
     // axios.post('/api/form', {
@@ -90,9 +90,9 @@ class PackageFC extends Component {
       <form className="container-fluid" onSubmit={this.handleFormSubmit}>
         <Select
           title={"Systems"}
-          name={"systems"}
+          name={"system"}
           options={this.state.AccountSystems}
-          value={this.state.accountSyncState.system}
+          value={this.state.PackageState.system}
           placeholder={"Account System"}
           handleChange={this.handleInput}
         />{" "}
