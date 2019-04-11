@@ -36,10 +36,10 @@ export default class Entities extends Component {
   </div>
       {/* {console.log('DDDD', this.props)} */}
   <div className="component">
-        <h1 className="EntitiesTItle">Account Sync</h1>
+        <h1 className="EntitiesTitle">Account Sync</h1>
         {/* <h3>Account System: </h3> */}
         <div className="Formz"><FormContainer /></div>
-        <div className="buttonL"><Link to="/accountsync3"><button className='13'>Continue</button></Link></div>
+        <div className="buttonL"><Link to="/accountsync3"><button className='Link'>Continue</button></Link></div>
       </div>
   </div>
     );

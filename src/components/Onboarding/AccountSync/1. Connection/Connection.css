@@ -6,17 +6,12 @@
     justify-items: center; 
     display:grid;
     grid-template-columns: 217px 3fr; 
-    grid-column-gap: 300px;
-    grid-template-rows: .5fr 300px .3fr; 
+    grid-column-gap: 200px;
+    grid-template-rows: 700px;
     align-items: flex-start;
     
 }
-.Connection img {
-    margin-left: 5px;
-  height: 70px;
-  width: 140px;
-  align-content: center; 
-}
+
 .nav1 {
     text-decoration: none;
     justify-content: center;
@@ -54,7 +49,7 @@
     text-align: center;
 }
 
-.ConnectionTItle {
+.ConnectionTitle {
     grid-column: 2/2;
     grid-row: 1/2;
     width: 750px;
@@ -83,13 +78,9 @@ input[type=password] {
     /* width: 20%; */
   }
 
-label {
-    margin-top: 20px;
-    font-size: 20px;
-}
-
 .form-group {
     display: grid;
+    margin-top: -20px;
     /* grid-gap: 20px; */
 }
 

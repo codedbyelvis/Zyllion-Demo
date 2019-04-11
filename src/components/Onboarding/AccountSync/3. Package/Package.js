@@ -22,25 +22,32 @@ export default class Package extends Component {
   render() {
     return (
       <div className="Package">
-      <navbar>
-        <Link to="/accountsync1" className='nav1'>Account Sync</Link>
-        <Link to="/bankinfo" className='nav2'>Bank Account Integration</Link>
-        <Link to="/w9part1" className='nav3'>W-9 Form</Link>
-      </navbar>
-      <p>Setup Progress</p>
+  <div className="menubar">
+        <div className="Setup">
+        <p>Setup Progress</p>
               <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}% done</p>
-        <h1>Account Sync</h1>
-
-        <img className='Zyllion' src={Zyllion} alt=""/>
-        <p><strong>. . . . . .</strong></p>
-        <p>Connecting</p>
-        <img className='Avatar' src={Avatar} alt=""/>
-        {/* <FormContainer /> */}
-        <Link to="/bankinfo"><button className='cat'>Continue</button></Link>
+              <p>Progress: {this.state.progress}%</p>
+        </div>
+        <div className="navbar">
+        <Link to="/accountsync1" className='nav1'><p>Account Sync</p></Link>
+        <Link to="/bankinfo" className='nav2'><p>Bank Account Integration</p></Link>
+        <Link to="/w9part1" className='nav3'><p>W-9 Form</p></Link>
+        </div>
+  </div>
+  <div className="component">
+        <h1 className="PackageTitle">Account Sync</h1>
+        <div className="images">
+      <div className="123"><img className='Zyllion' src={Zyllion} alt=""/></div>
+      <div className="234"><p><strong>. . . . . .</strong></p>
+      <p>Connecting</p></div>
+      <div className="456"><img className='Avatar' src={Avatar} alt=""/></div>
+        </div>
+        {/* <h3>Account System: </h3> */}
+        {/* <div className="Formz"><FormContainer /></div> */}
+        <div className="buttonL"><Link to="/bankinfo"><button className='Link'>Continue</button></Link></div>
+  </div>
       </div>
     );
   }
 }
-
 // render(<Package />, document.getElementById("root"));

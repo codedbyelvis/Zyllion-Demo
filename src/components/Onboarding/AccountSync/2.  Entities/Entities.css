@@ -54,7 +54,7 @@
     text-align: center;
 }
 
-.EntitiesTItle {
+.EntitiesTitle {
     /* grid-column: 2/2;
     grid-row: 1/2; */
     width: 750px;
@@ -64,13 +64,15 @@
 }
 
 .Formz {
-    align-self: center;
-    justify-self: center;
     width: 200px;
-    /* margin-bottom: 500px; */
+    margin-left: 37%;
+    margin-right: 37%;
+    
 }
 
 input[type=text] {
+    align-self: inherit;
+    justify-self: inherit;
     /* margin-top: 20px; */
     /* width: 20%; */
   }
@@ -97,14 +99,14 @@ label {
 .Link {
     grid-column: 1/3;
     grid-row: 3/4;
-    align-self: center;
-    justify-self: center;
     height: 50px;
     width: 100px;
     /* margin-bottom: 500px; */
 }
 
 .buttonL {
+    margin-top: 50px; 
+    /* margin-left: 300px;  */
     /* grid-column: 2/3;
     grid-row: 3/4; */
 }
@@ -118,6 +120,7 @@ label {
 .component {
     align-self: center;
     justify-self: center;
+    text-align: center;
     border: black 5px solid;
-    height: 350px;
+    height: 500px;
 }
