@@ -21,17 +21,20 @@ export default class VendorThankYou extends Component {
     render() {
         return (
             
-                <div className='VendorThankYou'>
-            <p>Setup Progress</p>
-              <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}% done</p>
-                <h1 className='VendorThankYouTitle'>Complete</h1>
-                <h5>You are now Onboarded with WeWork LLC</h5>
-                {/* <p>Invite your vendors below</p> */}
-                {/* <Link to="/dashboard"><button className='db'>Continue to Dashboard</button></Link> */}
-                
-                
-                </div> 
+            <div className='ThankYou'>
+            <div className="TYmenubar">
+      <div className="Setup">
+      <p>Setup Progress</p>
+            <p>Step {this.state.step} of 3</p>
+            <p>Progress: {this.state.progress}%</p>
+      </div>
+</div>
+<div className="component">
+      <h1 className='ThankYouTitle'>You are now Onboarded with Steve's Accounting, LLC</h1>
+      <div className="words">
+      <p>Please check your email inbox for your registration confirmation</p></div>
+</div>
+              </div> 
         )
     }
 }

@@ -71,8 +71,8 @@
 }
 
 input[type=text] {
-    align-self: inherit;
-    justify-self: inherit;
+    /* align-self: inherit;
+    justify-self: inherit; */
     /* margin-top: 20px; */
     /* width: 20%; */
   }
@@ -88,7 +88,7 @@ input[type=password] {
 
 label {
     margin-top: 20px;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .form-group {
@@ -120,7 +120,7 @@ label {
 .component {
     align-self: center;
     justify-self: center;
-    text-align: center;
+    /* text-align: center; */
     border: black 5px solid;
     height: 500px;
 }

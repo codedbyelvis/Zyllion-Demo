@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 /* Import Components */
 import Input from "../../../Forms/Input";
-import TextArea from "../../../Forms/TextArea";
+import TextArea from "../../../Forms/w9TextArea";
 import Button from "../../../Forms/Button";
 
 class FormContainer extends Component {
@@ -72,7 +72,7 @@ class FormContainer extends Component {
     return (
       <form className="container-fluid" onSubmit={this.handleFormSubmit}>
         <TextArea
-          title={"Sign Here"}
+          title={"Sign Here:"}
           rows={10}
           value={this.state.Agree.signature}
           name={"signature"}

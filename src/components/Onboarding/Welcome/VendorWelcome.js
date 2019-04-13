@@ -17,8 +17,11 @@ export default class VendorWelcome extends Component {
         return (
             
                 <div className='VendorWelcome'>
-                <h1 className='VendorWelcomeTitle'>A Zyllion client has asked you to onboard with them</h1>
-                <Link to="/contactinfo"><button className='csi'>Begin</button></Link>
+                {/* <div className="VWel"> */}
+                <h1 className='VendorWelcomeTitle'>Vendor onboarding</h1>
+                <p>Steven's Accounting, LLC has asked you to onboard with them</p>
+                {/* </div> */}
+                <Link to="/contactinfo"><button className='VWel'>Begin</button></Link>
 
                 
                 

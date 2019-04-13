@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from 'axios';
 
-import Input from "../../../Forms/Input";
+import Input from "../../../Forms/w9Input";
 import Button from "../../../Forms/Button";
 
 class IdentificationFC extends Component {
@@ -106,7 +106,7 @@ class IdentificationFC extends Component {
       <form className="container-fluid" onSubmit={this.handleFormSubmit}>
         <Input
           inputType={"text"}
-          title={"Social Security Number"}
+          title={"Social Security Number:"}
           name={"ss_number"}
           value={this.state.Identification.ss_number}
           placeholder={"Social Security Number"}
@@ -115,7 +115,7 @@ class IdentificationFC extends Component {
         {/* Social Security Number */}
         <Input
           inputType={"text"}
-          title={"Employer Identification Number"}
+          title={"Employer Identification Number:"}
           name={"ei_number"}
           value={this.state.Identification.ei_number}
           placeholder={"Employer Identification Number"}

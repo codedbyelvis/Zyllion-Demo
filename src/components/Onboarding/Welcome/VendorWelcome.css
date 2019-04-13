@@ -1,0 +1,17 @@
+.VendorWelcome {
+    height: 75vh;
+    width: 110vh;
+    margin: auto;
+    margin-top: 20vh;
+    /* margin-left: 75px; */
+    /* align-content: center; 
+    justify-content: center;  */
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.VWel {
+    text-align: center;
+    font-size: 20px;
+}

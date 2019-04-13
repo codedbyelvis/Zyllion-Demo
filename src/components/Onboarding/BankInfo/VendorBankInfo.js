@@ -24,18 +24,24 @@ export default class VendorBankInfo extends Component {
 
   render() {
     return (
-      <div className="VendorBankInfo">
-      <navbar>
-      <Link to="/contactinfo" className='nav1'>Contact Information</Link>
-      <Link to="/vendorbankinfo" className='nav2'>Bank Account Integration</Link>
-      <Link to="/vendorw9part1" className='nav3'>W-9 Form</Link>
-      </navbar>
-      <p>Setup Progress</p>
+      <div className="BankInfo">
+  <div className="menubar">
+        <div className="Setup">
+        <p>Setup Progress</p>
               <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}% done</p>
-        <h1>Bank Account Integration</h1>
-        <FormContainer />
-        <Link to="/vendorw9part1"><button className='Vdog'>Continue</button></Link>
+              <p>Progress: {this.state.progress}%</p>
+        </div>
+        <div className="navbar">
+        <Link to="/contactinfo" className='nav1'><p>Contact Information</p></Link>
+        <Link to="/bankinfo" className='nav2'><p>Bank Account Integration</p></Link>
+        <Link to="/w9part1" className='nav3'><p>W-9 Form</p></Link>
+        </div>
+  </div>
+  <div className="component">
+        <h1 className="BankInfoTitle">Bank Account Integration</h1>
+        <div className="Formz"><FormContainer /></div>
+        <div className="buttonL"><Link to="/vendorw9part1"><button className='Link'>Continue</button></Link></div>
+  </div>
       </div>
     );
   }

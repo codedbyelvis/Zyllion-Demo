@@ -38,7 +38,7 @@ export default class Package extends Component {
         <h1 className="PackageTitle">Account Sync</h1>
         <div className="images">
       <div className="123"><img className='Zyllion' src={Zyllion} alt=""/></div>
-      <div className="234"><p><strong>. . . . . .</strong></p>
+      <div className="two"><p><strong>. . . . . .</strong></p>
       <p>Connecting</p></div>
       <div className="456"><img className='Avatar' src={Avatar} alt=""/></div>
         </div>

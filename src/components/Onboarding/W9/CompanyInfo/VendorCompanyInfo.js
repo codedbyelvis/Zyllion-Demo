@@ -20,30 +20,24 @@ export default class VendorCompanyInfo extends Component {
     render() {
         return (
 
-                <div className='VendorCompanyInfo'>
-              <navbar>
-              <Link to="/contactinfo" className='nav1'>Contact Information</Link>
-              <Link to="/vendorbankinfo" className='nav2'>Bank Account Integration</Link>
-              <Link to="/vendorw9part1" className='nav3'>W-9 Form</Link>
-              </navbar>
-                <p>Setup Progress</p>
+                <div className='CompanyInfo'>
+  <div className="menubar">
+        <div className="Setup">
+        <p>Setup Progress</p>
               <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}% done</p>
-                <h1 className='VendorCompanyInfoTitle'>Request for Taxpayer Identification Number and Certification</h1>
-                <h4>Part I</h4>
-
-                <FormContainer />
-                {/* <div>
-  <input type="checkbox" id="scales" name="scales"
-         checked/>
-  <label for="scales">Scales</label>
-
-  <input type="checkbox" id="horns" name="horns"/>
-  <label for="horns">Horns</label>
-</div> */}
-                <Link to="/vendorw9part2"><button className='VCI'>Continue</button></Link>
-                
-                
+              <p>Progress: {this.state.progress}%</p>
+        </div>
+        <div className="navbar">
+        <Link to="/contactinfo" className='nav1'><p>Contact Information</p></Link>
+        <Link to="/bankinfo" className='nav2'><p>Bank Account Integration</p></Link>
+        <Link to="/w9part1" className='nav3'><p>W-9 Form</p></Link>
+        </div>
+  </div>
+  <div className="w9component1">
+        <h1 className="CompanyInfoTitle">Request for Taxpayer Identification Number and Certification</h1>
+        <div className="Formz"><FormContainer /></div>
+        <div className="buttonL"><Link to="/vendorw9part2"><button className='Link'>Continue</button></Link></div>
+  </div>
                 </div> 
         )
     }

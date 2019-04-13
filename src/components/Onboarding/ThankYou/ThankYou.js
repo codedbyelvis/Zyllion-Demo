@@ -22,15 +22,19 @@ export default class ThankYou extends Component {
         return (
             
                 <div className='ThankYou'>
-            <p>Setup Progress</p>
+              <div className="TYmenubar">
+        <div className="Setup">
+        <p>Setup Progress</p>
               <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}% done</p>
-                <h1 className='ThankYouTitle'>Thank You</h1>
-                <h5>Thank you for being a part of Zyllion!</h5>
-                <p>Your Dashboard is now synced</p>
-                <Link to="/dashboard"><button className='db'>Continue to Dashboard</button></Link>
-                
-                
+              <p>Progress: {this.state.progress}%</p>
+        </div>
+  </div>
+  <div className="component">
+        <h1 className='ThankYouTitle'>Registration Completed</h1>
+        <div className="words">
+        <p>Please check your email inbox for your registration confirmation</p></div>
+        <div className="buttonL"><Link to="/dashboard"><button className='Link'>Continue to Dashboard</button></Link></div>
+  </div>
                 </div> 
         )
     }

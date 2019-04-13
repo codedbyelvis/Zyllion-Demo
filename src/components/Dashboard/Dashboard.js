@@ -40,42 +40,53 @@ export default class Dashboard extends Component {
     render() {
 
         const PendingCompanies = () => (
+            <div className='pendingModalCon'>
             <div className='pendingModal'>
                 <div className='CompanyName'>
-                  <h5>Company Name</h5>
+                  {/* <h5>Company Name</h5> */}
                   <p><b>WeWork LLC</b></p>
                     <br/>
-                  <p><b>Serendipty Labs</b></p>
+                     <p>4/11/2019</p>
                     <br/>
-                  <p><b>Industrious LLC</b></p>
+                    <p>info@wework.com</p>
+                    <br/>
+                    <p>Pending</p>
+                  <button>Resend</button>
+                  
                 </div>
 
                 <div className='DateSent'>
-                  <h5>Date Sent</h5>
-                  <p>4/11/2019</p>
+                  {/* <h5>Date Sent</h5> */}
+                 <p><b>Serendipty Labs</b></p>
                     <br/>
                   <p>4/08/2019</p>
                     <br/>
-                  <p>4/01/2019</p>
+                    <p>info@serendiptylabs.com</p>
+                    <br/>
+                    <p>Pending</p>
+                  <button>Resend</button>
+                    {/* <br/> */}
                 </div>
 
                 <div className='Email'>
-                  <h5>Email</h5>
+                  {/* <h5>Email</h5> */}
+                  <p><b>Industrious LLC</b></p>
+                    <br/>
                   <p>info@Industriousoffice.com</p>
                     <br/>
-                  <p>info@wework.com</p>
-                </div>
-
-                <div className='Status'>
-                  <h5>Status</h5>
-                  <p>Pending</p>
-                  <button>Resend</button>
-                    <br/>
-                  <p>Pending</p>
-                  <button>Resend</button>
+                  <p>4/01/2019</p>
                     <br/>
                   <p>Expired</p>
                   <button>Resend</button>
+                  
+                </div>
+
+                <div className='Status'>
+                  {/* <h5>Status</h5> */}
+                  
+                    {/* <br/> */}
+                  
+                </div>                  
                 </div>                  
                                 
 
@@ -85,42 +96,55 @@ export default class Dashboard extends Component {
 
 
         const RecievedCompanies = () => (
+            <div className='recievedModalCon'>
             <div className='recievedModal'>
-                <div className='RCompanyName'>
-                  <h5>Company Name</h5>
-                  <p><b>WeLive LLC</b></p>
-                    <br/>
-                  <p><b>Serendipty Labs</b></p>
-                    <br/>
+                <div className='CompanyName'>
+                  {/* <h5>Company Name</h5> */}
                   <p><b>Industrious LLC</b></p>
-                </div>
-
-                <div className='DateRecieved'>
-                  <h5>Date Recieved</h5>
-                  <p>4/09/2019</p>
-                    <br/>
+                  <br/>
                   <p>4/04/2019</p>
-                    <br/>
-                  <p>3/25/2019</p>
-                </div>
-
-                <div className='REmail'>
-                  <h5>Email</h5>
                   <p>info@Industriousoffice.com</p>
                     <br/>
-                  <p>info@wework.com</p>
+                    <p>Pending</p>
+                    {/* <button>Resend</button> */}
+                    {/* <br/> */}
+                </div>
+                <div className='DateRecieved'>
+                    <p><b>WeLive LLC</b></p>
+                    <br/>
+                    <p>4/02/2019</p>
+                    <br/>
+                    <p>info@welive.com</p>
+                    <br/>
+                    <p>Pending</p>
+                  {/* <h5>Date Recieved</h5> */}
+                <div className='Email'>
+                  <p><b>Serendipty Labs</b></p>
+                    <br/>
+                  <p>3/25/2019</p>
+                    <br/>
+                  <p>info@serendiptylabs.com</p>
+                    <br/>
+                    <p>Expired</p>
+                  
+                    
+                </div>
+
+                  {/* <h5>Email</h5> */}
+                  
+                  
+                  {/* <button>Resend</button> */}
+                    {/* <br/> */}
+                    
                 </div>
 
                 <div className='Status'>
-                  <h5>Status</h5>
-                  <p>Pending</p>
-                  <button>Resend</button>
-                    <br/>
-                  <p>Pending</p>
-                  <button>Resend</button>
-                    <br/>
-                  <p>Expired</p>
-                  <button>Resend</button>
+                  {/* <h5>Status</h5> */}
+                  
+                  
+                  
+                  {/* <button>Resend</button> */}
+                </div>   
                 </div>   
 
 
@@ -134,13 +158,17 @@ export default class Dashboard extends Component {
 
                 <div className='Dashboard'>
                 <h1 className='DashboardTitle'>Client Dashboard</h1>
-                <button className="logout"><a href='http://localhost:3000/'>Logout</a></button>
+                <div className="cLog"><button className="logout"><a href='http://localhost:3000/'>Logout</a></button></div>
+                <div className="Buttons">
                 <button className='pending' onClick={this.handlePending}>Pending</button>
-                {this.state.pending && <PendingCompanies />}
-                <button className='recieved' onClick={this.handleRecieved}>Recieved</button>
-                {!this.state.pending && <RecievedCompanies />}
                 <Link to="/vendorwelcome"><button className='ven'>Add a vendor</button></Link>
-                
+                <button className='recieved' onClick={this.handleRecieved}>Recieved</button>
+                </div>
+
+                <div className="DropOpCon"><div className="DropOp">
+                {this.state.pending && <PendingCompanies />}
+                {!this.state.pending && <RecievedCompanies />}
+                </div></div>
                 
                 </div> 
                 

@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 /* Import Components */
 import CheckBox from "../../../Forms/Checkbox";
-import Input from "../../../Forms/Input";
-import Select from "../../../Forms/Select";
+import Input from "../../../Forms/w9Input";
+import Select from "../../../Forms/w9Select";
 import Button from "../../../Forms/Button";
 
 class CompanyInfo extends Component {

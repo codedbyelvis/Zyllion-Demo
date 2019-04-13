@@ -98,3 +98,17 @@ input[type=password] {
     grid-column: 2/3;
     grid-row: 3/4;
 }
+
+.menubar {
+    align-self: center;
+    justify-self: center;
+    border: black 5px solid;
+    height: 700px;
+}
+.component {
+    align-self: center;
+    justify-self: center;
+    /* text-align: center; */
+    border: black 5px solid;
+    height: 500px;
+}

@@ -45,7 +45,6 @@ export default class Connection extends Component {
   </div>
   <div className="component">
         <h1 className="EntitiesTitle">Account Sync</h1>
-        {/* <h3>Account System: </h3> */}
         <div className="Formz"><FormContainer /></div>
         <div className="buttonL"><Link to="/accountsync2"><button className='Link'>Continue</button></Link></div>
   </div>
