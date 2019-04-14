@@ -24,8 +24,9 @@ export default class Signature extends Component {
    <div className="menubar">
         <div className="Setup">
         <p>Setup Progress</p>
-              <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}%</p>
+              <p>Step <strong>{this.state.step}</strong> of 3</p>
+              <p>Progress: <strong>{this.state.progress}%</strong></p>
+              <div className="hr"><hr/></div>
         </div>
         <div className="navbar">
         <Link to="/accountsync1" className='nav1'><p>Account Sync</p></Link>
@@ -49,9 +50,9 @@ export default class Signature extends Component {
           your tax return. For real estate transactions, item 2 does not apply. For mortgage interest paid, acquisition, 
           or abandonment of secured property, cancellation of debt, contributions to an individual retirement arrangement 
           (IRA), and generally, payments other than interest and dividends, you are not required to sign the certification, 
-          but you must provide your correct TIN. <a href=''>See the instructions below.</a>
+          but you must provide your correct TIN. <a href='https://www.irs.gov/pub/irs-pdf/fw9.pdf' blank="w9 form">See the instructions below.</a>
       </p></div>
-        <div className="Formz"><FormContainer /></div>
+        <div className="FormzS"><FormContainer /></div>
         <div className="buttonL"><Link to="/thankyou"><button className='Link'>Finish</button></Link></div>
   </div>
   </div> 

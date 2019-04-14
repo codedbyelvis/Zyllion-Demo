@@ -24,8 +24,9 @@ export default class Identification extends Component {
    <div className="menubar">
         <div className="Setup">
         <p>Setup Progress</p>
-              <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}%</p>
+              <p>Step <strong>{this.state.step}</strong> of 3</p>
+              <p>Progress: <strong>{this.state.progress}%</strong></p>
+              <div className="hr"><hr/></div>
         </div>
         <div className="navbar">
         <Link to="/accountsync1" className='nav1'><p>Account Sync</p></Link>
@@ -42,7 +43,7 @@ export default class Identification extends Component {
         employer Identification number (EIN). If you do not have a number, see How to get a TIN on page 3.
     </p>
     <p>Note. if the account is in more than one name, see the chart on page 4 for the guidelines on whose number to enter</p></div>
-        <div className="Formz"><FormContainer /></div>
+        <div className="FormzI"><FormContainer /></div>
         <div className="buttonL"><Link to="/w9part3"><button className='Link'>Continue</button></Link></div>
   </div>
 </div> 

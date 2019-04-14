@@ -12,43 +12,6 @@
     
 }
 
-.nav1 {
-    text-decoration: none;
-    justify-content: center;
-    text-align: left;
-    align-items: flex-start;
-    /* margin-left: 400x; */
-    /* float: left; */
-}
-.nav2 {
-    text-decoration: none;
-    text-align: left;
-    margin-left: 100x;
-}
-.nav3 {
-    text-decoration: none;
-    text-align: left;
-    margin-left: 100x;
-}
-
-.navbar {
-    grid-column: 1/2;
-    margin-left: 50px;
-    height: 100px;
-    /* padding-left: 100x; */
-    text-align: center;
-    vertical-align: top;
-    /* margin-bottom: 400px; */
-    align-content: inherit;
-}
-
-.Setup {
-    grid-column: 1/1;
-    margin-top: 50px;
-    height: 100px;
-    text-align: center;
-}
-
 .ContactInfoTitle {
     grid-column: 2/2;
     grid-row: 1/2;
@@ -58,58 +21,23 @@
     text-align: center;
 }
 
-.Formz {
+.FormzCI {
     align-self: center;
     justify-self: center;
     /* margin-bottom: 500px; */
 }
 
-input[type=text] {
-    /* margin-top: 20px; */
-    /* width: 20%; */
-  }
-  
-input[type=select] {
-    /* width: 20%; */
-  }
-
-input[type=password] {
-    /* margin-top: 20px; */
-    /* width: 20%; */
-  }
-
-.form-group {
-    display: grid;
-    margin-top: -20px;
-    /* grid-gap: 20px; */
-}
-
-.Link {
-    grid-column: 1/3;
-    grid-row: 3/4;
-    align-self: center;
-    justify-self: center;
-    height: 50px;
-    width: 100px;
+.container-fluid {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;  */
     /* margin-bottom: 500px; */
 }
 
-.buttonL {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-.menubar {
-    align-self: center;
-    justify-self: center;
-    border: black 5px solid;
-    height: 700px;
-}
 .Concomponent {
     align-self: center;
     justify-self: center;
     margin-top: 190vh;
     margin-bottom: 150vh;
-    border: black 5px solid;
-    height: 950px;
+    border: black 2px solid;
+    height: 970px;
 }

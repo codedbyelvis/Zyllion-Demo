@@ -34,8 +34,9 @@ export default class Connection extends Component {
   <div className="menubar">
         <div className="Setup">
         <p>Setup Progress</p>
-              <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}%</p>
+              <p>Step <strong>{this.state.step}</strong> of 3</p>
+              <p>Progress: <strong>{this.state.progress}%</strong></p>
+              <div className="hr"><hr/></div>
         </div>
         <div className="navbar">
         <Link to="/accountsync1" className='nav1'><p>Account Sync</p></Link>
@@ -44,7 +45,7 @@ export default class Connection extends Component {
         </div>
   </div>
   <div className="component">
-        <h1 className="EntitiesTitle">Account Sync</h1>
+        <h1 className="ConnectionTitle">Account Sync</h1>
         <div className="Formz"><FormContainer /></div>
         <div className="buttonL"><Link to="/accountsync2"><button className='Link'>Continue</button></Link></div>
   </div>

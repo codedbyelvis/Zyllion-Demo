@@ -119,8 +119,8 @@ export default class App extends Component {
             </Link> */}
             <div className="nav_links" >
               {/* <p>Setup Progress</p>
-              <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}% done</p> */}
+              <p>Step <strong>{this.state.step}</strong> of 3</p>
+              <p>Progress: <strong>{this.state.progress}%</strong> done</p> */}
               <ul>
               {/* <li className="Welcome"><Link to="/">Welcome</Link></li> */}
               {/* <li className="dashboard"><Link to="/dashboard">Dashboard</Link></li> */}

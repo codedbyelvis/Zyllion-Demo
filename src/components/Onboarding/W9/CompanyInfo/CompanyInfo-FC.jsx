@@ -278,6 +278,7 @@ class CompanyInfo extends Component {
   <label for="Limited Liability company">Limited Liability company</label> */}
   3. Check appropriate box for federal tax classification:
   <input type="radio" name="tax" value="Individual/sole proprietor or single-member LLC"/> Individual/sole proprietor or single-member LLC
+  <br/>
   <input type="radio" name="tax" value="C corporation"/> C corporation
   <input type="radio" name="tax" value="S corporation"/> S corporation
   <input type="radio" name="tax" value="Partnership"/> Partnership

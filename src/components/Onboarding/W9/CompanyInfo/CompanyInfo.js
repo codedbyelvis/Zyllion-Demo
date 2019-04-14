@@ -24,8 +24,9 @@ export default class CompanyInfo extends Component {
   <div className="menubar">
         <div className="Setup">
         <p>Setup Progress</p>
-              <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}%</p>
+              <p>Step <strong>{this.state.step}</strong> of 3</p>
+              <p>Progress: <strong>{this.state.progress}%</strong></p>
+              <div className="hr"><hr/></div>
         </div>
         <div className="navbar">
         <Link to="/accountsync1" className='nav1'><p>Account Sync</p></Link>
@@ -35,7 +36,7 @@ export default class CompanyInfo extends Component {
   </div>
   <div className="w9component1">
         <h1 className="CompanyInfoTitle">Request for Taxpayer Identification Number and Certification</h1>
-        <div className="Formz"><FormContainer /></div>
+        <div className="FormzC"><FormContainer /></div>
         <div className="buttonL"><Link to="/w9part2"><button className='Link'>Continue</button></Link></div>
   </div>
   </div> 

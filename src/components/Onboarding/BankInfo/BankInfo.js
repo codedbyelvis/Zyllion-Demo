@@ -28,8 +28,9 @@ export default class BankInfo extends Component {
   <div className="menubar">
         <div className="Setup">
         <p>Setup Progress</p>
-              <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}%</p>
+              <p>Step <strong>{this.state.step}</strong> of 3</p>
+              <p>Progress: <strong>{this.state.progress}%</strong></p>
+              <div className="hr"><hr/></div>
         </div>
         <div className="navbar">
         <Link to="/accountsync1" className='nav1'><p>Account Sync</p></Link>

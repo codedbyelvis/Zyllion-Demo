@@ -25,9 +25,10 @@ export default class ThankYou extends Component {
               <div className="TYmenubar">
         <div className="Setup">
         <p>Setup Progress</p>
-              <p>Step {this.state.step} of 3</p>
-              <p>Progress: {this.state.progress}%</p>
+              <p>Step <strong>{this.state.step}</strong> of 3</p>
+              <p>Progress: <strong>{this.state.progress}%</strong></p>
         </div>
+        <div className="hr"><hr/></div>
   </div>
   <div className="component">
         <h1 className='ThankYouTitle'>Registration Completed</h1>
