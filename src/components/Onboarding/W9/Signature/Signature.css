@@ -4,7 +4,7 @@
     margin-bottom: 50px;
 }
 .Signature {
-    height: 135vh;
+    height: 140vh;
     width: 100vh;
     margin-left: 75px;
     align-items: center; 
@@ -43,10 +43,10 @@
     align-self: center;
     justify-self: center;
     text-align: left;
-    margin-top: 200px;
+    margin-top: 240px;
     /* margin-bottom: 150vh; */
     border: black 2px solid;
-    height: 800px;
+    height: 840px;
     width: 850px;
     background-color: #8BD1E4;
 }

@@ -83,10 +83,10 @@
 .Concomponent {
     align-self: center;
     justify-self: center;
-    margin-top: 185px;
+    margin-top: 115px;
     /* margin-bottom: 150vh; */
     border: black 2px solid;
-    height: 670px;
+    height: 750px;
     background-color: #8BD1E4;
 }
 /*   like paper
