@@ -378,14 +378,14 @@ class ContactInfoFC extends Component {
           handleChange={this.handleInput}
         />{" "}
         {/* Name of the company */}
-        <Input
+        {/* <Input
           inputType={"text"}
           title={"Title"}
           name={"title"}
           value={this.state.ContactInfoState.title}
           placeholder={"Enter your Title"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "} */}
         {/* Vendor Title */}
         <Input
           inputType={"text"}
@@ -396,14 +396,14 @@ class ContactInfoFC extends Component {
           handleChange={this.handleInput}
         />{" "}
         {/* Vendor First Name */}
-        <Input
+        {/* <Input
           inputType={"text"}
           title={"Middle Name"}
           name={"middle_name"}
           value={this.state.ContactInfoState.middle_name}
           placeholder={"Enter your Middle Name"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "} */}
         {/* Vendor Middle Name */}
         <Input
           inputType={"text"}
@@ -414,14 +414,14 @@ class ContactInfoFC extends Component {
           handleChange={this.handleInput}
         />{" "}
         {/* Vendor Last Name */}
-        <Input
+        {/* <Input
           inputType={"text"}
           title={"Website"}
           name={"website"}
           value={this.state.ContactInfoState.website}
           placeholder={"Enter your website"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "} */}
         {/* website */}
         <Input
           inputType={"text"}
@@ -441,23 +441,23 @@ class ContactInfoFC extends Component {
           handleChange={this.handleInput}
         />{" "}
         {/* Phone Number */}
-        <Input
+        {/* <Input
           inputType={"text"}
           title={"Mobile Number"}
           name={"mobile"}
           value={this.state.ContactInfoState.mobile}
           placeholder={"Enter your Mobile Number"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "} */}
         {/* Mobile Number */}
-        <Input
+        {/* <Input
           inputType={"text"}
           title={"Fax Number"}
           name={"fax"}
           value={this.state.ContactInfoState.fax}
           placeholder={"Enter your Fax Number"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "} */}
         {/* Fax Number */}
         <Input
           inputType={"text"}

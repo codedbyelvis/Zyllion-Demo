@@ -30,7 +30,7 @@ export default class VendorThankYou extends Component {
       </div>
 </div>
 <div className="component">
-      <h1 className='ThankYouTitle'>You are now Onboarded with Steve's Accounting, LLC</h1>
+      <h1 className='ThankYouTitle'>You are now Onboarded with Rachel's Accounting, LLC</h1>
       <div className="words">
       <p>Please check your email inbox for your registration confirmation</p></div>
 </div>

@@ -17,7 +17,7 @@ class EntitiesFC extends Component {
       },
 
       AccountSystems: ["Quickbooks"],
-      CompaniesList: ["Company1"]
+      CompaniesList: ["Rachel's Accounting, LLC"]
 
     };
     this.handleSystem = this.handleSystem.bind(this);

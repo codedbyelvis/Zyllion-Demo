@@ -1,9 +1,10 @@
 .script {
     margin-left: 50px;
+    margin-right: 5px;
     margin-bottom: 50px;
 }
 .Signature {
-    height: 100vh;
+    height: 105vh;
     width: 100vh;
     margin-left: 75px;
     align-items: center; 
@@ -43,9 +44,10 @@
     align-self: center;
     justify-self: center;
     text-align: left;
-    margin-top: 177vh;
-    margin-bottom: 150vh;
-    border: black 5px solid;
-    height: 900px;
+    margin-top: 200px;
+    /* margin-bottom: 150vh; */
+    border: black 2px solid;
+    height: 800px;
     width: 900px;
+    background-color: #8BD1E4;
 }

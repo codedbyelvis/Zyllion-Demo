@@ -38,6 +38,7 @@ export default class Welcome extends Component {
                 <div className='Welcome'>
                 <h1 className='WelcomeTitle'>Client Onboarding</h1>
                 <p>Thank you for choosing Zyllion</p>
+                <p style={{fontSize: '35px'}}>Rachel's Accounting, LLC</p>
                 <Link to="/accountsync1"><button className='Wel'>Begin</button></Link>
 
                 

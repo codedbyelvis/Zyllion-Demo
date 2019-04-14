@@ -19,7 +19,7 @@ export default class VendorWelcome extends Component {
                 <div className='VendorWelcome'>
                 {/* <div className="VWel"> */}
                 <h1 className='VendorWelcomeTitle'>Vendor onboarding</h1>
-                <p>Steven's Accounting, LLC has asked you to onboard with them</p>
+                <p>Rachel's Accounting, LLC has asked you to onboard with them</p>
                 {/* </div> */}
                 <Link to="/contactinfo"><button className='VWel'>Begin</button></Link>
 

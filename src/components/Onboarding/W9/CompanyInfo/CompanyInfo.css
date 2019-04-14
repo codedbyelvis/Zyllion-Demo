@@ -1,5 +1,5 @@
 .CompanyInfo {
-    height: 100vh;
+    height: 123%;
     width: 100vh;
     margin-left: 75px;
     align-items: center; 
@@ -14,7 +14,7 @@
 
 .FormzC {
     /* width: 200px; */
-    margin-left: 20px;
+    margin-left: 50px;
     text-align: left; 
     /* margin-right: 37%; */
     
@@ -25,8 +25,11 @@
     grid-row: 1/2;
     width: 750px;
     margin-top: 100px;
-    /* padding-left: 50px; */
+    margin-right: 0px;
+    padding-left: 50px;
     text-align: center;
+    /* align-self: center; */
+    /* justify-self: center; */
     color: rgb(89, 135, 255);
 }
 
@@ -50,9 +53,11 @@
 .w9component1 {
     align-self: center;
     justify-self: center;
-    margin-top: 210vh;
-    margin-bottom: 150vh;
+    margin-top: 370px;
+    /* margin-bottom: 700px; */
+    /* margin-bottom: 50vh; */
     border: black 2px solid;
-    height: 950px;
-    width: 800px;
+    height: 980px;
+    width: 900px;
+    background-color: #8BD1E4;
 }

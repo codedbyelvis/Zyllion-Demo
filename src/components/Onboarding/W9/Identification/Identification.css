@@ -38,9 +38,10 @@
     align-self: center;
     justify-self: center;
     text-align: left;
-    margin-top: 0px;
+    margin-top: 100px;
     /* margin-bottom: 0px; */
-    border: black 5px solid;
+    border: black 2px solid;
     height: 700px;
     width: 900px;
+    background-color: #8BD1E4;
 }

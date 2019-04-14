@@ -71,7 +71,7 @@
 label {
     margin-top: 20px;
     margin-right: 200px;
-    /* font-size: 20px; */
+    font-size: 18px;
 }
 
 input[type=text] {
@@ -84,7 +84,6 @@ input[type=text] {
   }
 input[type=select] {
     margin-right: 200px;
-    max-width: 25px;
     /* margin-top: 20px; */
     /* width: 20%; */
     align-items: start;
@@ -93,15 +92,30 @@ input[type=select] {
 
 input[type=password] {
     margin-right: 200px;
+    width: 200px;
     /* margin-top: 20px; */
     /* width: 20%; */
   }
 
 .form-group {
     display: grid;
-    margin-top: -20px;
+    margin-bottom: 10px;
     /* grid-gap: 20px; */
 }
+
+/* .form-control{
+    max-width: 155px;
+  } */
+
+#system {
+    max-width: 125px;
+  }
+#company {
+    max-width: 125px;
+  }
+#system {
+    max-width: 125px;
+  }
 
 .Link {
     /* width: 197.067px; */
