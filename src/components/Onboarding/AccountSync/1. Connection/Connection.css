@@ -1,5 +1,5 @@
 .Connection {
-    height: 100vh;
+    height: 110vh;
     width: 100vh;
     margin-left: 75px;
     align-items: center; 
@@ -75,6 +75,7 @@ label {
 }
 
 input[type=text] {
+    margin-top: 10px;
     margin-right: 200px;
     width: 200px;
     /* margin-top: 20px; */
@@ -83,6 +84,7 @@ input[type=text] {
     justify-items: start;
   }
 input[type=select] {
+    margin-top: 20px;
     margin-right: 200px;
     /* margin-top: 20px; */
     /* width: 20%; */
@@ -91,8 +93,17 @@ input[type=select] {
   }
 
 input[type=password] {
+    margin-top: 20px;
     margin-right: 200px;
     width: 200px;
+    /* margin-top: 20px; */
+    /* width: 20%; */
+  }
+
+input[type=radio] {
+    margin-top: 20px;
+    /* margin-right: 200px;
+    width: 200px; */
     /* margin-top: 20px; */
     /* width: 20%; */
   }
@@ -100,6 +111,7 @@ input[type=password] {
 .form-group {
     display: grid;
     margin-bottom: 10px;
+    width: 300px;
     /* grid-gap: 20px; */
 }
 
@@ -109,12 +121,30 @@ input[type=password] {
 
 #system {
     max-width: 125px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 #company {
     max-width: 125px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-#system {
+#state {
     max-width: 125px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+#llc {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+#payee {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+#fatca {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
 .Link {
@@ -155,6 +185,16 @@ input[type=password] {
     /* text-align: center; */
     border: black 2px solid;
     height: 500px;
+    background-color: #8BD1E4;
+}
+
+.Acomponent {
+    align-self: center;
+    justify-self: center;
+    margin-top: 100px;
+    /* text-align: center; */
+    border: black 2px solid;
+    height: 600px;
     background-color: #8BD1E4;
 }
 

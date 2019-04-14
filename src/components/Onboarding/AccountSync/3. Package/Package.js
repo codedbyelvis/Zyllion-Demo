@@ -38,10 +38,10 @@ export default class Package extends Component {
   <div className="component">
         <h1 className="PackageTitle">Account Sync</h1>
         <div className="images">
-      <div className="123"><img className='Zyllion' src={Zyllion} alt=""/></div>
+      <div className="one"><img className='Zyllion' src={Zyllion} alt=""/></div>
       <div className="two"><p><strong>. . . . . .</strong></p>
       <p>Connecting</p></div>
-      <div className="456"><img className='Avatar' src={Avatar} alt=""/></div>
+      <div className="three"><img className='Avatar' src={Avatar} alt=""/></div>
         </div>
         {/* <h3>Account System: </h3> */}
         {/* <div className="Formz"><FormContainer /></div> */}

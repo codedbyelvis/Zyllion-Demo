@@ -44,7 +44,7 @@ export default class Connection extends Component {
         <Link to="/w9part1" className='nav3'><p>W-9 Form</p></Link>
         </div>
   </div>
-  <div className="component">
+  <div className="Acomponent">
         <h1 className="ConnectionTitle">Account Sync</h1>
         <div className="Formz"><FormContainer /></div>
         <div className="buttonL"><Link to="/accountsync2"><button className='Link'>Continue</button></Link></div>

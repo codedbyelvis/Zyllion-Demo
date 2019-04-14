@@ -6,6 +6,7 @@
   position: relative;
     border: black 5px solid;
     border-radius: 60%;
+    background-color: white;
 }
 .images {
     /* height: 100x; */

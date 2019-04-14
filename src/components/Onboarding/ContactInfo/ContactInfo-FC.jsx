@@ -368,15 +368,15 @@ class ContactInfoFC extends Component {
 
   render() {
     return (
-      <form className="container-fluid" onSubmit={this.handleFormSubmit}>
-        <Input
+      <form className="CIcontainer-fluid" onSubmit={this.handleFormSubmit}>
+        <div className="cn"><Input
           inputType={"text"}
           title={"Company Name"}
           name={"company_name"}
           value={this.state.ContactInfoState.company_name}
           placeholder={"Enter your Company"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "}</div>
         {/* Name of the company */}
         {/* <Input
           inputType={"text"}
@@ -387,14 +387,14 @@ class ContactInfoFC extends Component {
           handleChange={this.handleInput}
         />{" "} */}
         {/* Vendor Title */}
-        <Input
+        <div className="fn"><Input
           inputType={"text"}
           title={"First Name"}
           name={"first_name"}
           value={this.state.ContactInfoState.first_name}
           placeholder={"Enter your First Name"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "}</div>
         {/* Vendor First Name */}
         {/* <Input
           inputType={"text"}
@@ -405,14 +405,14 @@ class ContactInfoFC extends Component {
           handleChange={this.handleInput}
         />{" "} */}
         {/* Vendor Middle Name */}
-        <Input
+        <div className="ln"><Input
           inputType={"text"}
           title={"Last Name"}
           name={"last_name"}
           value={this.state.ContactInfoState.last_name}
           placeholder={"Enter your Last Name"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "}</div>
         {/* Vendor Last Name */}
         {/* <Input
           inputType={"text"}
@@ -423,23 +423,23 @@ class ContactInfoFC extends Component {
           handleChange={this.handleInput}
         />{" "} */}
         {/* website */}
-        <Input
+        <div className="em"><Input
           inputType={"text"}
           title={"Email"}
           name={"email"}
           value={this.state.ContactInfoState.email}
           placeholder={"Enter your email"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "}</div>
         {/* Email */}
-        <Input
+        <div className="pn"><Input
           inputType={"text"}
           title={"Phone Number"}
           name={"phone"}
           value={this.state.ContactInfoState.phone}
           placeholder={"Enter your Phone Number"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "}</div>
         {/* Phone Number */}
         {/* <Input
           inputType={"text"}
@@ -459,59 +459,59 @@ class ContactInfoFC extends Component {
           handleChange={this.handleInput}
         />{" "} */}
         {/* Fax Number */}
-        <Input
+        <div className="a1"><Input
           inputType={"text"}
           title={"Address 1"}
           name={"address1"}
           value={this.state.ContactInfoState.address1}
           placeholder={"Enter your Address"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "}</div>
         {/* Address 1 */}
-        <Input
+        <div className="a2"><Input
           inputType={"text"}
           title={"Address 2"}
           name={"address2"}
           value={this.state.ContactInfoState.address2}
           placeholder={"Address 2"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "}</div>
         {/* Address 2 */}
-        <Input
+        <div className="ct"><Input
           inputType={"text"}
           title={"City"}
           name={"city"}
           value={this.state.ContactInfoState.city}
           placeholder={"Enter your City"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "}</div>
         {/* City */}
-        <Select
+        <div className="st"><Select
           title={"State"}
           name={"state"}
           options={this.state.StateInitials}
           value={this.state.ContactInfoState.state}
           placeholder={"State"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "}</div>
         {/* State Selection */}
-        <Input
+        <div className="zp"><Input
           inputType={"text"}
           title={"Zipcode"}
           name={"zip"}
           value={this.state.ContactInfoState.zip}
           placeholder={"Zipcode"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "}</div>
         {/* Zipcode */}
-        <Input
+        <div className="cy"><Input
           inputType={"text"}
           title={"Country"}
           name={"country"}
           value={this.state.ContactInfoState.country}
           placeholder={"Enter your Country"}
           handleChange={this.handleInput}
-        />{" "}
+        />{" "}</div>
         {/* Country */}
         {/* <Button
           action={this.handleFormSubmit}

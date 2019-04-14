@@ -1,5 +1,5 @@
 .ContactInfo {
-    height: 100vh;
+    height: 120vh;
     width: 100vh;
     margin-left: 75px;
     align-items: center; 
@@ -24,21 +24,121 @@
 .FormzCI {
     align-self: center;
     justify-self: center;
+    margin-left: 50px;
+    text-align: left; 
     /* margin-bottom: 500px; */
 }
 
-.container-fluid {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;  */
-    /* margin-bottom: 500px; */
+.CIcontainer-fluid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.cn {
+    grid-column: 1/2;
+    grid-row: 1/1;
+}
+.fn {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.ln {
+    grid-column: 2/2;
+    grid-row: 2/3;
+}
+.em {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.pn {
+    grid-column: 2/2;
+    grid-row: 3/4;
+}
+.a1 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.a2 {
+    grid-column: 2/2;
+    grid-row: 4/5;
+}
+.ct {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+.st {
+    grid-column: 2/2;
+    grid-row: 5/6;
+}
+.zp {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.cy {
+    grid-column: 2/2;
+    grid-row: 6/7;
 }
 
 .Concomponent {
     align-self: center;
     justify-self: center;
-    margin-top: 190vh;
-    margin-bottom: 150vh;
+    margin-top: 185px;
+    /* margin-bottom: 150vh; */
     border: black 2px solid;
-    height: 970px;
+    height: 670px;
     background-color: #8BD1E4;
 }
+/*   like paper
+.cn {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+}
+.fn {
+    grid-column: 1/2;
+    grid-row: 2/2;
+}
+.ln {
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+.em {
+    grid-column: 1/2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.pn {
+    grid-column: 1/2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.a1 {
+    grid-column: 1/2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.a2 {
+    grid-column: 1/2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.ct {
+    grid-column: 1/2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+.st {
+    grid-column: 1/2;
+    grid-row: 8/9;
+}
+.zp {
+    grid-column: 2/2;
+    grid-row: 8/9;
+}
+.cy {
+    grid-column: 1/2;
+    grid-row: 9/10;
+} */

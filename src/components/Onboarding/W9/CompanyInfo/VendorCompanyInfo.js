@@ -36,6 +36,7 @@ export default class VendorCompanyInfo extends Component {
   </div>
   <div className="w9component1">
         <h1 className="CompanyInfoTitle">Request for Taxpayer Identification Number and Certification</h1>
+        <div className="scriptC"><h4>Part I</h4></div>
         <div className="FormzC"><FormContainer /></div>
         <div className="buttonL"><Link to="/vendorw9part2"><button className='Link'>Continue</button></Link></div>
   </div>
