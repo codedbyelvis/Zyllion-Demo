@@ -18,34 +18,48 @@
     color: rgb(89, 135, 255);
 }
 
-.Buttons {
-    text-align: center;
-    font-size: 20px;
-    grid-column: 2/4;
-    grid-row: 2/2;
-}
-
 .pending {
     font-size: 18px;
 }
-.ven {
-    margin: 50px 100px 50px 100px;
-    font-size: 18px;
+.pebutton {
+    text-align: center;
+    align-self: center; 
+    justify-self: center; 
+    grid-column: 2/3;
+    grid-row: 2/2;
 }
 .recieved {
     font-size: 18px;
 }
+.rebutton {
+    text-align: center;
+    align-self: center; 
+    justify-self: center; 
+    grid-column: 3/4;
+    grid-row: 2/2;
+}
 .logout {
-    margin-top: 80px;
+    /* margin-top: 80px; */
     font-size: 18px;
     text-decoration: none;
 }
 .cLog {
     text-align: center;
-    align-items: center; 
-    justify-items: center; 
+    align-self: center; 
+    justify-self: center; 
     grid-column: 4/4;
     grid-row: 1/1;
+}
+.ven {
+margin: 50px 100px 50px 100px;
+font-size: 18px;
+}
+.vebutton {
+text-align: center;
+align-self: center; 
+justify-self: center; 
+grid-column: 4/4;
+grid-row: 2/2;
 }
 .DropOpCon {
     text-align: center;

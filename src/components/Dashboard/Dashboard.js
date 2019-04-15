@@ -159,11 +159,11 @@ export default class Dashboard extends Component {
                 <div className='Dashboard'>
                 <h1 className='DashboardTitle'>Client Dashboard</h1>
                 <div className="cLog"><button className="logout"><a href='http://localhost:3000/'>Logout</a></button></div>
-                <div className="Buttons">
-                <button className='pending' onClick={this.handlePending}>Pending</button>
-                <Link to="/vendorwelcome"><button className='ven'>Add a vendor</button></Link>
-                <button className='recieved' onClick={this.handleRecieved}>Recieved</button>
-                </div>
+                {/* <div className="Buttons"> */}
+                <div className="pebutton"><button className='pending' onClick={this.handlePending}>Pending</button></div>
+                <div className="vebutton"><Link to="/vendorwelcome"><button className='ven'>Add a vendor</button></Link></div>
+                <div className="rebutton"><button className='recieved' onClick={this.handleRecieved}>Recieved</button></div>
+                {/* </div> */}
 
                 <div className="DropOpCon"><div className="DropOp">
                 {this.state.pending && <PendingCompanies />}
