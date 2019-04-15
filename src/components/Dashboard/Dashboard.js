@@ -43,7 +43,7 @@ export default class Dashboard extends Component {
             <div className='pendingModalCon'>
             <div className='pendingModal'>
                 <div className='CompanyName'>
-                  <div className="ChoiceTitle"><h5>Company Name</h5></div>
+                  <div className="ChoiceTitle"><h3>Company Name</h3></div>
                   <div className="ChoiceOneName"><p><b>WeWork LLC</b></p></div>
                     <br/>
                     <div className="ChoiceTwoName"><p><b>serendipty Labs</b></p></div>
@@ -53,7 +53,7 @@ export default class Dashboard extends Component {
                 </div>
 
                 <div className='DateSent'>
-                <div className="ChoiceDate"><h5>Date Sent</h5></div>
+                <div className="ChoiceDate"><h3>Date Sent</h3></div>
                 <div className="ChoiceOneDate"><p>4/11/2019</p></div>
                     <br/>
                     <div className="ChoiceTwoDate"><p>4/08/2019</p></div>
@@ -63,7 +63,7 @@ export default class Dashboard extends Component {
                 </div>
 
                 <div className='Email'>
-                <div className="ChoiceEmail"><h5>Email</h5></div>
+                <div className="ChoiceEmail"><h3>Email</h3></div>
                 <div className="ChoiceOneEmail"><p>info@wework.com</p></div>
                     <br/>
                     <div className="ChoiceTwoEmail"><p>info@serendiptylabs.com</p></div>
@@ -73,17 +73,17 @@ export default class Dashboard extends Component {
                 </div>
 
                 <div className='Status'>
-                <div className="ChoiceStatus"><h5>Status</h5></div>
+                <div className="ChoiceStatus"><h3>Status</h3></div>
                 <div className="ChoiceOneStatus"><p>Pending</p></div>
                   <br/>
                   <div className="ChoiceTwoStatus"><p>Pending</p></div>
                   <br/>
-                  <div className="ChoiceThreeStatus"><p>Pending</p></div>
+                  <div className="ChoiceThreeStatus"><p>Expired</p></div>
                   <br/>
                   </div> 
 
                 <div className='Resend'>
-                <div className="ChoiceResend"><h5>Resend</h5></div>
+                <div className="ChoiceResend"><h3>Resend</h3></div>
                 <div className="ChoiceOneResend">
                   <button>Resend</button></div>
                   <br/>
@@ -103,63 +103,66 @@ export default class Dashboard extends Component {
 
 
         const RecievedCompanies = () => (
-            <div className='recievedModal'>
-                <div className='CompanyName'>
-                  {/* <h5>Company Name</h5> */}
-                  <div className="theone"><p><b>Industrious LLC</b></p></div>
+          <div className='recievedModalCon'>
+          <div className='recievedModal'>
+              <div className='CompanyName'>
+                <div className="RecTitle"><h3>Company Name</h3></div>
+                <div className="RecOneName"><p><b>Target</b></p></div>
                   <br/>
-                  <div><p><b>wework</b></p></div>
+                  <div className="RecTwoName"><p><b>Old Navy</b></p></div>
                   <br/>
-                  <div><p><b>serendiptylabs</b></p></div>
-                  {/* <p>4/04/2019</p> */}
-                  {/* <p>info@Industriousoffice.com</p> */}
-                    <br/>
-                    {/* <p>Pending</p> */}
-                    {/* <button>Resend</button> */}
-                    {/* <br/> */}
-                </div>
-                <div className='DateRecieved'>
-                    {/* <p><b>WeLive LLC</b></p> */}
-                    <br/>
-                    <p>4/02/2019</p>
-                    <br/>
-                    {/* <p>info@welive.com</p> */}
-                    <br/>
-                    {/* <p>Pending</p> */}
-                  {/* <h5>Date Recieved</h5> */}
-                <div className='Email'>
-                  <p><b>Serendipty Labs</b></p>
-                    <br/>
-                  <p>3/25/2019</p>
-                    <br/>
-                  <p>info@serendiptylabs.com</p>
-                    <br/>
-                    <p>Expired</p>
-                  
-                    
-                </div>
-
-                  {/* <h5>Email</h5> */}
-                  
-                  
-                  {/* <button>Resend</button> */}
-                    {/* <br/> */}
-                    
-                </div>
-
-                <div className='Status'>
-                  {/* <h5>Status</h5> */}
-                  
-                  
-                  
-                  {/* <button>Resend</button> */}
-                </div>   
-
-
-
-                {console.log('Acutally John', this.state.pending)}
+                  <div className="RecThreeName"><p><b>Van Heusen</b></p></div>
+                  <br/>
               </div>
-            )
+
+              <div className='DateSent'>
+              <div className="RecDate"><h3>Date Sent</h3></div>
+              <div className="RecOneDate"><p>4/14/2019</p></div>
+                  <br/>
+                  <div className="RecTwoDate"><p>4/011/2019</p></div>
+                  <br/>
+                  <div className="RecThreeDate"><p>4/04/2019</p></div>
+                  <br/>
+              </div>
+
+              <div className='Email'>
+              <div className="RecEmail"><h3>Email</h3></div>
+              <div className="RecOneEmail"><p>info@target.com</p></div>
+                  <br/>
+                  <div className="RecTwoEmail"><p>info@oldnavy.com</p></div>
+                  <br/>
+                  <div className="RecThreeEmail"><p>info@vanheusen.com</p></div>
+                  <br/>
+              </div>
+
+              {/* <div className='Status'>
+              <div className="RecStatus"><h3>Status</h3></div>
+              <div className="RecOneStatus"><p>Pending</p></div>
+                <br/>
+                <div className="RecTwoStatus"><p>Pending</p></div>
+                <br/>
+                <div className="RecThreeStatus"><p>Pending</p></div>
+                <br/>
+                </div>  */}
+
+              {/* <div className='Resend'>
+              <div className="RecResend"><h3>Resend</h3></div>
+              <div className="RecOneResend">
+                <button>Resend</button></div>
+                <br/>
+                <div className="RecTwoResend">
+                <button>Resend</button></div>
+                <br/>
+                <div className="RecThreeResend">
+                <button>Resend</button></div>
+                <br/>
+              </div>                   */}
+                              
+
+          {console.log('Acutally Jack', this.state.pending)}
+            </div>
+            </div>
+          )
 
 
         return (
