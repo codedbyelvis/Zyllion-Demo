@@ -1,18 +1,20 @@
 .Dashboard {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     /* margin-left: 75px; */
     align-items: center; 
     justify-items: center; 
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     /* grid-column-gap: 200px; */
-    grid-template-rows: 1fr .5fr 3fr;
+    grid-template-rows: 300px 1fr 3fr;
     align-items: flex-start;
 }
 
 .DashboardTitle {
     text-align: center;
+    align-self: center; 
+    justify-self: center; 
     grid-column: 2/4;
     grid-row: 1/1;
     color: rgb(89, 135, 255);
@@ -24,9 +26,10 @@
 .pebutton {
     text-align: center;
     align-self: center; 
-    justify-self: center; 
+    justify-self: right; 
     grid-column: 2/3;
     grid-row: 2/2;
+    margin-right: 10px;
 }
 .recieved {
     font-size: 18px;
@@ -34,9 +37,10 @@
 .rebutton {
     text-align: center;
     align-self: center; 
-    justify-self: center; 
+    justify-self: left; 
     grid-column: 3/4;
     grid-row: 2/2;
+    margin-left: 10px;
 }
 .logout {
     /* margin-top: 80px; */
@@ -61,78 +65,70 @@ justify-self: center;
 grid-column: 4/4;
 grid-row: 2/2;
 }
-.DropOpCon {
-    text-align: center;
-    align-items: center; 
-    justify-items: center; 
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row: 3/3;
-}
-.DropOp {
-    text-align: center;
-    align-items: center; 
-    justify-items: center; 
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-column-gap: 30%;
-    width: 90%;
-    /* grid-template-rows: 1fr 1fr 1fr;  */
-}
 
 .pendingModalCon {
-    text-align: center;
-    align-items: center; 
-    justify-items: center; 
-    grid-column: 1/1;
-    margin-left: 450px;
-    margin-bottom: 40px;
-    /* width: 30%; */
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
-.recievedModalCon {
+
+.pendingModal {
     text-align: center;
-    align-items: center; 
-    justify-items: center; 
-    grid-column: 2/2;
-    margin-left: 580px;
-    /* width: 30%; */
-    /* grid-row: 1/1; */
-}
-.pendingModalCon {
-    text-align: center;
-    align-items: center; 
-    justify-items: center; 
+    align-self: center; 
+    justify-self: center; 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-columns: repeat(5, 1fr);
+
 }
-.recievedModalCon {
-    text-align: center;
-    align-items: center; 
-    justify-items: center; 
-}
+
 .CompanyName {
-    text-align: center;
-    align-items: center; 
-    justify-items: center; 
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row: 1/1;
-}
-.DateRecieved {
-    text-align: center;
-    align-items: center; 
-    justify-items: center; 
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row: 2/2;
+    display: grid;
+    /* grid-template-rows: repeat(3, 1fr); */
 }
 
-.Dashboard h5 {
-    text-decoration: underline black;
+.DateSent {
+    display: grid;
+    /* grid-template-rows: repeat(3, 1fr); */
 }
 
-.Test {
-    background-color: red;
+.Email {
+    display: grid;
+    /* grid-template-rows: repeat(3, 1fr); */
 }
 
+.Status {
+    display: grid;
+    /* grid-template-rows: repeat(3, 1fr); */
+}
+
+.Resend {
+    display: grid;
+    /* grid-template-rows: repeat(3, 1fr); */
+}
+
+.Dashboard Button {
+	/* -moz-box-shadow: 0px 2.5px 0px 1px #dbd0db;
+	-webkit-box-shadow: 0px 2.5px 0px 1px #dbd0db;
+	box-shadow: 0px 2.5px 0px 1px #dbd0db; */
+	background-color:#378ee5;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #3281d1;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:4px 15px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #528ecc;
+}
+.Dashboard Button:hover {
+	background-color:#167de3;
+}
+.Dashboard Button:active {
+	position:relative;
+	top:1px;
+}
