@@ -17,6 +17,8 @@ import Signature from "./components/Onboarding/W9/Signature/Signature";
 import VendorSignature from "./components/Onboarding/W9/Signature/VendorSignature";
 import ThankYou from "./components/Onboarding/ThankYou/ThankYou";
 import VendorThankYou from "./components/Onboarding/ThankYou/VendorThankYou";
+import {StaticRouter} from 'react-router-dom'
+import w9 from "./components/W9/index.html"
 // import Signin from "./components/Signin/Signin";
 // import Signup from "./components/Signup/Signup";
 // import zyllion_logo from "./components/AccountSync/Logo.png";
@@ -30,6 +32,8 @@ export default class App extends Component {
       progress : 0,
     };
   }
+
+
 
 //   let progressBar = (state) => {
 //     let step = 0;
@@ -70,6 +74,7 @@ export default class App extends Component {
 // }; progressBar(state);
 
   render() {
+
   //   let progressBar = (state) => {
   //     let step = 0;
   //     let progress = 0;
@@ -161,13 +166,15 @@ export default class App extends Component {
               <Route component={BankInfo} path="/bankinfo" />
               <Route component={VendorBankInfo} path="/vendorbankinfo" />
               <Route component={CompanyInfo} path="/w9part1" />
-              <Route component={VendorCompanyInfo} path="/vendorw9part1" />
+                <Route component={VendorCompanyInfo} path="/vendorw9part1" />
               <Route component={Identification} path="/w9part2" />
               <Route component={VendorIdentification} path="/vendorw9part2" />
               <Route component={Signature} path="/w9part3" />
               <Route component={VendorSignature} path="/vendorw9part3" />
               <Route component={ThankYou} path="/thankyou" />
               <Route component={VendorThankYou} path="/vendorthankyou" />
+              <StaticRouter location='/components/W9/' context={{}}></StaticRouter>
+              {/* <Route component={W9} path="/W9" /> */}
               {/* <Route component={Signup} path="/signup" />
               <Route component={Signin} path="/signin" /> */}
             </Switch>

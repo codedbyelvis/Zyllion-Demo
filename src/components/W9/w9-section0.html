@@ -1,0 +1,182 @@
+<div>
+
+    <div class="row">
+    <label><span class="bold">1</span> Name (as shown on your income tax return). Name is required on this line; do not leave this line blank.</label>
+    <input name="name" id="name" type="text" class="custom-input required" data-required="required">
+    </div>
+
+
+    <div class="row">
+    <label><span class="bold">2</span> Business name/disregarded entity name, if different from above</label>
+    <input name="business_name" id="business_name" type="text" class="custom-input">
+    </div>
+    <div class="mid-row ">
+
+    <div>
+        <p><span class="bold">3 </span> Check appropriate box for federal tax classification: </p>
+        <div class="row-3">
+            <div class="line-1">
+
+            <div class="small-12 large-4 columns">
+                <label>
+                <input name="federal tax classification" type="radio" value="Individual/sole proprietor or single-member LLC" class="custom-input">
+                Individual/sole proprietor or single-member LLC</label>
+            </div>
+            
+            <div class="small-12 large-4 columns">
+                <label>
+                <input name="federal tax classification" type="radio" value="C Corporation" class="custom-input">
+                C Corporation</label>
+            </div>
+            <div class="small-12 large-4 columns">
+                <label>
+                <input name="federal tax classification" type="radio" value="S Corporation" class="custom-input">
+                S Corporation</label>
+            </div>
+            <div class="small-12 large-4 columns">
+                <label>
+                <input name="federal tax classification" type="radio" value="Partnership" class="custom-input">
+                Partnership</label>
+            </div>
+            <div class="small-12 large-4 columns end">
+                <label>
+                <input name="federal tax classification" type="radio" value="Trust/estate" class="custom-input">
+                Trust/estate</label>
+            </div>
+                
+            </div>
+            <div class="line-2">
+            <div class="small-12 large-4 columns">
+                <label>
+                <input name="federal tax classification" type="radio" value="Limited liability company" class="custom-input">
+                Limited liability company. 
+                </label>
+                <label>Enter the tax classification ▶
+                <select name="tax classification" class="custom-input">
+                    <option value="C">C corporation</option>
+                    <option value="S">S corporation</option>
+                    <option value="P">Partnership</option>
+                </select>
+                </label>
+            </div>
+
+            <div class="small" style="padding:8px;">
+                <strong>Note.</strong>  For a single-member LLC that is disregarded, do not check LLC; check the appropriate box in the line above for
+            thse tax classification of the single-member owner.Check the appropriate box in the line above for the tax classification of the single-member owner.  Do not check LLC if the LLC is classified as a single-member LLC that is disregarded from the owner unless the owner of the LLC is another LLC that is not disregarded from the owner for U.S. federal tax purposes. Otherwise, a single-member LLC that is disregarded from the owner should check the appropriate box for the tax classification of its owner.       
+            </div>  
+            </div>
+            
+            <div class="small-12 large-4 line-3">
+                <label>
+                <input name="federal tax classification" type="radio" value="Other" class="custom-input">
+                Other</label> <a href="#Other_entities"> (see instructions below</a>) ▶
+                </div>
+
+        </div>
+        
+
+    </div>
+    
+    <div class="border-left" style="padding-left:8px;">
+        <div class="small-12 large-6 columns">
+        <p><span class="bold">4</span> Exemptions (codes apply only to certain entities, not individuals; see instructions on page 3):</p>
+        
+        <label class="option">Exempt payee code (if any)
+            <select name="Exempt payee code">
+            <option value="" selected></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            </select>
+        </label>
+        
+        </div>
+        <div class="small-12 large-6 columns" style="margin-top:4px;">
+        <label class="option" >Exemption from FATCA reporting code (if any)
+            <select name="Exemption from FATCA reporting code">
+            <option value="" selected></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            </select>
+    </label>
+            <p>
+            <div class="small bold">(Applies to accounts maintained outside the U.S.)</div>
+            </p>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="mid-row">
+    <div>
+        <div class="row large-12 columns">
+        <label><span class="bold">5</span> Address (number, street, and apt. or suite no.)</label>
+        <input name="Address" type="text" class="custom-input" data-required="required">
+        </div>
+        <div class="row large-12 columns">
+        <label> <span class="bold">6</span> City, state, and ZIP code</label>
+        <input name="location" id="location" type="text" class="custom-input" data-required="required">
+        </div>
+        <div class="row large-12 columns">
+        <label>List account number(s) here (optional)</label>
+        <input name="account numbers" type="text" class="custom-input">
+        </div>    
+    </div>
+
+    <div class="border-left" style="paddin-left:8px;">
+        <div class="row  large-12 columns">
+        <label><span class="bold">7</span> Requester’s name and address (optional)</label>
+        <input type="text" height="75" name="Requester’s name and address">
+        </div>  
+    
+    </div>
+    </div>
+
+    <br>
+    <div>
+    <div class="caption bold title">
+        <strong>Part I</strong> Taxpayer Identification Number (TIN)
+    </div>
+    <div class="mid-row" style="margin-top:4px">
+        <div>
+        <p>Enter your TIN in the appropriate box. The TIN provided must match the name given on the “Name” line to avoid backup withholding. For individuals, this is your social security number (SSN). However, for a resident alien, sole proprietor, or disregarded entity, see the Part I instructions on page 3. For other entities, it is your employer identification number (EIN). If you do not have a number, see How to get a TIN on page 3.</p>
+        <p><strong>Note.</strong> If the account is in more than one name, see the chart on page 4 for guidelines on whose number to enter.</p>
+
+        </div>    
+        <div class="border-left" style="padding-left:8px">
+            <div class="row">
+            <label><span class="bold">Social security number:</span></label>
+            <input type="password" name="ssn" id="ssn" type="ssn">
+            </div>
+            <div class="row">
+            <label><span class="bold">Employer identification number:</span></label>
+            <input type="password" name="ein" type="ein">
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+</div>

@@ -5,7 +5,12 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
+app.get('/w9-form',function(req,resp){
+    //
+    // Verify the user is logged in ...
+    console.log('foo ....')
+    resp.sendFile('D:\\Users\\elvis\\Projects\\zyllion-app\\src\\components\\W9\\index.html')
+})
 // app.use(function(req, res, next) {
 //     res.header('Access-Control-Allow-Origin', '*');
 //     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
