@@ -18,7 +18,7 @@ import VendorSignature from "./components/Onboarding/W9/Signature/VendorSignatur
 import ThankYou from "./components/Onboarding/ThankYou/ThankYou";
 import VendorThankYou from "./components/Onboarding/ThankYou/VendorThankYou";
 import {StaticRouter} from 'react-router-dom'
-import w9 from "./components/W9/index.html"
+// import w9 from "./components/W9/index.html"
 // import Signin from "./components/Signin/Signin";
 // import Signup from "./components/Signup/Signup";
 // import zyllion_logo from "./components/AccountSync/Logo.png";
@@ -173,7 +173,7 @@ export default class App extends Component {
               <Route component={VendorSignature} path="/vendorw9part3" />
               <Route component={ThankYou} path="/thankyou" />
               <Route component={VendorThankYou} path="/vendorthankyou" />
-              <StaticRouter location='/components/W9/' context={{}}></StaticRouter>
+              {/* <StaticRouter location='/components/W9/' context={{}}></StaticRouter> */}
               {/* <Route component={W9} path="/W9" /> */}
               {/* <Route component={Signup} path="/signup" />
               <Route component={Signin} path="/signin" /> */}
